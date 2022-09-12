@@ -1,0 +1,39 @@
+h2 {
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.nav-container {
+  background-color: white;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+  font-size: medium;
+  font-weight: bold;
+}
+
+
+
+footer {
+  position: relative;
+  top: 500px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}

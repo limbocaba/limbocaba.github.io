@@ -1,14 +1,27 @@
 h2 {
   text-align: center;
   font-family: 'Dosis', sans-serif;
+  text-decoration: underline;
 }
 
 h3 {
   text-align: center;
+  font-size: large;
 }
 
+
 body {
-  background-color: aliceblue;
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+
+}
+
+
+.social {
+  height: 50px;
+}
+
+.twit {
+  background-color: white;
 }
 
 header {
@@ -18,8 +31,13 @@ header {
 }
 
 .nav-container {
-  background-color: white;
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+  margin-top: -100px;
+  border: 2px solid white;
+  border-radius: 20px;
 }
+
+
 
 p {
   font-family: 'Dosis', sans-serif;
@@ -28,7 +46,17 @@ p {
   font-weight: bold;
 }
 
+li {
+  font-family: 'Dosis', sans-serif;
+  color: black;
+  font-weight: bold;
+}
 
+
+
+.sample {
+  height: 150px;
+}
 
 footer {
   position: relative;

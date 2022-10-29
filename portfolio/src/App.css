@@ -25,3 +25,15 @@
   opacity: 1;
   transform: scale(1.2);
 }
+
+.nav > img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: transform 50ms ease-in-out;
+
+}
+
+.nav > img:hover {
+  transform: scale(1.2);
+}

@@ -29,8 +29,9 @@
   color: white;
   cursor: pointer;
   font-weight: 400;
+  transition: transform 50ms ease-out;
 }
 
 .nav > h2:hover {
-  transform: matrix3d();
+  transform: scale(1.2);
 }

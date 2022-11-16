@@ -1,7 +1,7 @@
 import React from "react";
 import "../comp-css/Footer.css";
 import linkedLogo from "../images/linkedin.png";
-import gitLogo from "../images/GitHub32.png";
+import gitLogo from "../images/white2-git.png";
 
 function Footer() {
   const handleClickLinked = () => {

@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -34,4 +34,8 @@
 
 .nav > h2:hover {
   transform: scale(1.2);
+}
+
+body {
+  background-color: peachpuff;
 }

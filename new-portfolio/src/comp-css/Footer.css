@@ -1,5 +1,5 @@
 .footer {
-  background-color: #282c34;
+  background-color: grey;
   height: 120px;
   position: fixed;
   bottom: 0;
@@ -7,6 +7,12 @@
   width: 100%;
   color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > div {
+  margin: 10px;
 }
 
 .linkedin {

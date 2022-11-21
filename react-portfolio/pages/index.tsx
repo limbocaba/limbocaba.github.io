@@ -59,12 +59,9 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Sandy J Caba
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl ">Developer & Designer</h3>
+            <h3 className="text-2xl py-2 md:text-3xl ">Full Stack Developer</h3>
             <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
-              Yellow diamonds in the watch, this shit cost a lot Never send a
-              bitch your dot, that's how you get shot I DM in Vanish Mode, I do
-              that shit a lot Took her panties off and this bitch thicker than a
-              plot
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi debitis ut eveniet quas, vitae natus aliquam, sint obcaecati quidem labore dignissimos et, dolor dicta delectus nisi ipsa! Necessitatibus, impedit?
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -79,8 +76,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1">Services I Offer</h3>
             <p className=" text-md py-2 leading-8 text-gray-800">
-              Yellow diamonds in the watch, this shit cost a lot Never send a
-              bitch your dot, that's how you get shot I DM in Vanish Mode, I do
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, fugit veniam assumenda voluptatem consequuntur aliquid accusamus quidem asperiores sint quia neque commodi magni id. Eum quae rerum ut harum sunt.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -135,10 +131,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
-              Yellow diamonds in the watch, this shit cost a lot Never send a
-              bitch your dot, that's how you get shot I DM in Vanish Mode, I do
-              that shit a lot Took her panties off and this bitch thicker than a
-              plot
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet adipisci odit deleniti quaerat at eius doloremque. Autem animi sed impedit, harum iusto aut quisquam itaque, perspiciatis quo, velit officia?
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">

@@ -17,6 +17,15 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const handleClickGit = () => {
+    window.open("https://github.com/limbocaba","_blank")
+  }
+
+  const handleClickLinked = () => {
+    window.open("https://www.linkedin.com/in/jorielcaba2002/", "_blank")
+  }
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -59,8 +68,8 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillLinkedin />
-            <AiFillGithub />
+            <AiFillLinkedin className=" cursor-pointer" onClick={handleClickLinked} />
+            <AiFillGithub className=" cursor-pointer" onClick={handleClickGit} />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={metaAvatar} alt="" layout="fill" objectFit="cover" />

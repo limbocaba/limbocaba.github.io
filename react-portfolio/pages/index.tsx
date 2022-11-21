@@ -37,12 +37,12 @@ export default function Home() {
       <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className=" font-burtons text-xl">developedbysc</h1>
+            <h1 className=" font-burtons text-xl dark:text-white">developedbysc</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl dark:text-white"
                 />
               </li>
               <li>
@@ -59,8 +59,8 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Sandy J Caba
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl ">Full Stack Developer</h3>
-            <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Full Stack Developer</h3>
+            <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi debitis ut eveniet quas, vitae natus aliquam, sint obcaecati quidem labore dignissimos et, dolor dicta delectus nisi ipsa! Necessitatibus, impedit?
             </p>
           </div>
@@ -74,13 +74,13 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I Offer</h3>
-            <p className=" text-md py-2 leading-8 text-gray-800">
+            <h3 className="text-3xl py-1 dark:text-teal-600">Services I Offer</h3>
+            <p className=" text-md py-2 leading-8 text-gray-800 dark:text-white">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, fugit veniam assumenda voluptatem consequuntur aliquid accusamus quidem asperiores sint quia neque commodi magni id. Eum quae rerum ut harum sunt.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={code} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 Clean Coded Projects
@@ -95,7 +95,7 @@ export default function Home() {
               <p className=" text-gray-800 py-1">Python</p>
               <p className=" text-gray-800 py-1">Postgresql</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={design} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 Clean Coded Projects
@@ -110,7 +110,7 @@ export default function Home() {
               <p className=" text-gray-800 py-1">Python</p>
               <p className=" text-gray-800 py-1">Postgresql</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={thumb} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 Clean Coded Projects
@@ -129,8 +129,8 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 ">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <h3 className="text-3xl py-1 dark:text-teal-600 ">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet adipisci odit deleniti quaerat at eius doloremque. Autem animi sed impedit, harum iusto aut quisquam itaque, perspiciatis quo, velit officia?
             </p>
           </div>

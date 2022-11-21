@@ -5,6 +5,8 @@ import {
   AiFillLinkedin,
   AiFillGithub
 } from "react-icons/ai";
+import Image from "next/image";
+import metaAvatar from '../public/meta-avatar.png';
 
 export default function Home() {
   return (
@@ -46,6 +48,9 @@ export default function Home() {
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillLinkedin />
             <AiFillGithub />
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={metaAvatar} alt="" layout="fill" objectFit="cover"/>
           </div>
         </section>
       </main>

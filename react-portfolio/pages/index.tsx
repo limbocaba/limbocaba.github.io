@@ -178,7 +178,7 @@ export default function Home() {
                 onClick={handleClickPet}
               />
             </div>
-            <div>
+            <div className="basis-1/3 flex-1">
               <Image
                 src={morty}
                 alt=""

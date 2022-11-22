@@ -26,6 +26,22 @@ export default function Home() {
     window.open("https://www.linkedin.com/in/jorielcaba2002/", "_blank")
   }
 
+  const handleClickHulu = () => {
+    window.open("https://github.com/limbocaba/Hulu-Clone", "_blank")
+  }
+
+  const handleClickPoke = () => {
+    window.open("https://github.com/limbocaba/Pokedex-API", "_blank")
+  }
+
+  const handleClickMorty = () => {
+    window.open("https://github.com/limbocaba/Frontend-Game", "_blank")
+  }
+
+  const handleClickPet = () => {
+    window.open("https://github.com/Brandon-Alvarez-03/pet-style-mern", "_blank")
+  }
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -141,6 +157,7 @@ export default function Home() {
                 className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
                 alt=""
+                onClick={handleClickHulu}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -149,6 +166,7 @@ export default function Home() {
                 className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
                 alt=""
+                onClick={handleClickPoke}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -157,6 +175,7 @@ export default function Home() {
                 className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
                 alt=""
+                onClick={handleClickPet}
               />
             </div>
             <div>
@@ -165,6 +184,7 @@ export default function Home() {
                 alt=""
                 layout="responsive"
                 className="rounded-lg object-cover cursor-pointer"
+                onClick={handleClickMorty}
               />
             </div>
           </div>

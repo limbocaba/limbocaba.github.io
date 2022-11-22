@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
-  AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai";
@@ -13,6 +12,7 @@ import thumb from "../public/thumb.png";
 import hulu from "../public/hulucloneSS.png";
 import petLyfe from "../public/petlyfe.png";
 import pokedex from "../public/pokedex.png";
+import morty from "../public/morty.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -47,7 +47,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:text-black"
                   href="#"
                 >
                   Resume
@@ -61,12 +61,12 @@ export default function Home() {
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Full Stack Developer</h3>
             <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi debitis ut eveniet quas, vitae natus aliquam, sint obcaecati quidem labore dignissimos et, dolor dicta delectus nisi ipsa! Necessitatibus, impedit?
+              A hungry and motivated developer looking to expand his skillset and provide value to a team in YOUR company!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillLinkedin className=" cursor-pointer" onClick={handleClickLinked} />
-            <AiFillGithub className=" cursor-pointer" onClick={handleClickGit} />
+            <AiFillLinkedin className=" cursor-pointer hover:text-blue-700" onClick={handleClickLinked} />
+            <AiFillGithub className=" cursor-pointer hover:text-black dark:hover:text-white" onClick={handleClickGit} />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={metaAvatar} alt="" layout="fill" objectFit="cover" />
@@ -138,7 +138,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={hulu}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
                 alt=""
               />
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={pokedex}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
                 alt=""
               />
@@ -154,9 +154,17 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={petLyfe}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover cursor-pointer"
                 layout="responsive"
                 alt=""
+              />
+            </div>
+            <div>
+              <Image
+                src={morty}
+                alt=""
+                layout="responsive"
+                className="rounded-lg object-cover cursor-pointer"
               />
             </div>
           </div>

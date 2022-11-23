@@ -1,9 +1,6 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import metaAvatar from "../public/meta-avatar.png";
 import design from "../public/design.png";
@@ -19,28 +16,31 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleClickGit = () => {
-    window.open("https://github.com/limbocaba","_blank")
-  }
+    window.open("https://github.com/limbocaba", "_blank");
+  };
 
   const handleClickLinked = () => {
-    window.open("https://www.linkedin.com/in/jorielcaba2002/", "_blank")
-  }
+    window.open("https://www.linkedin.com/in/jorielcaba2002/", "_blank");
+  };
 
   const handleClickHulu = () => {
-    window.open("https://github.com/limbocaba/Hulu-Clone", "_blank")
-  }
+    window.open("https://github.com/limbocaba/Hulu-Clone", "_blank");
+  };
 
   const handleClickPoke = () => {
-    window.open("https://github.com/limbocaba/Pokedex-API", "_blank")
-  }
+    window.open("https://github.com/limbocaba/Pokedex-API", "_blank");
+  };
 
   const handleClickMorty = () => {
-    window.open("https://github.com/limbocaba/Frontend-Game", "_blank")
-  }
+    window.open("https://github.com/limbocaba/Frontend-Game", "_blank");
+  };
 
   const handleClickPet = () => {
-    window.open("https://github.com/Brandon-Alvarez-03/pet-style-mern", "_blank")
-  }
+    window.open(
+      "https://github.com/Brandon-Alvarez-03/pet-style-mern",
+      "_blank"
+    );
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -53,7 +53,9 @@ export default function Home() {
       <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className=" font-burtons text-xl dark:text-white">developedbysc</h1>
+            <h1 className=" font-burtons text-xl dark:text-white">
+              developedbysc
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -75,14 +77,23 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Sandy J Caba
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Full Stack Developer</h3>
+            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+              Full Stack Developer
+            </h3>
             <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
-              A hungry and motivated developer looking to expand his skillset and provide value to a team in YOUR company!
+              A hungry and motivated developer looking to expand his skillset
+              and provide value to a team in YOUR company!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillLinkedin className=" cursor-pointer hover:text-blue-700" onClick={handleClickLinked} />
-            <AiFillGithub className=" cursor-pointer hover:text-black dark:hover:text-white" onClick={handleClickGit} />
+            <AiFillLinkedin
+              className=" cursor-pointer hover:text-blue-700"
+              onClick={handleClickLinked}
+            />
+            <AiFillGithub
+              className=" cursor-pointer hover:text-black dark:hover:text-white"
+              onClick={handleClickGit}
+            />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={metaAvatar} alt="" layout="fill" objectFit="cover" />
@@ -90,9 +101,14 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-teal-600">Services I Offer</h3>
+            <h3 className="text-3xl py-1 dark:text-teal-600">
+              Services I Offer
+            </h3>
             <p className=" text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, fugit veniam assumenda voluptatem consequuntur aliquid accusamus quidem asperiores sint quia neque commodi magni id. Eum quae rerum ut harum sunt.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Deleniti, fugit veniam assumenda voluptatem consequuntur aliquid
+              accusamus quidem asperiores sint quia neque commodi magni id. Eum
+              quae rerum ut harum sunt.
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -145,16 +161,18 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-teal-600 ">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet adipisci odit deleniti quaerat at eius doloremque. Autem animi sed impedit, harum iusto aut quisquam itaque, perspiciatis quo, velit officia?
-            </p>
+            <div className="flex justify-center">
+              <h3 className="text-3xl py-1 dark:text-teal-600 justify-center underline font-semibold">
+                Projects
+              </h3>
+            </div>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white"></p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <Image
                 src={hulu}
-                className="rounded-lg object-cover cursor-pointer"
+                className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
                 layout="responsive"
                 alt=""
                 onClick={handleClickHulu}
@@ -163,7 +181,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={pokedex}
-                className="rounded-lg object-cover cursor-pointer"
+                className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
                 layout="responsive"
                 alt=""
                 onClick={handleClickPoke}
@@ -172,20 +190,20 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={petLyfe}
-                className="rounded-lg object-cover cursor-pointer"
+                className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
                 layout="responsive"
                 alt=""
                 onClick={handleClickPet}
               />
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
+               <Image
                 src={morty}
                 alt=""
                 layout="responsive"
-                className="rounded-lg object-cover cursor-pointer"
+                className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
                 onClick={handleClickMorty}
-              />
+              /> 
             </div>
           </div>
         </section>

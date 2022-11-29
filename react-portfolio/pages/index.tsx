@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill, BsFillSunriseFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import metaAvatar from "../public/meta-avatar.png";
@@ -42,6 +42,10 @@ export default function Home() {
     );
   };
 
+  const handleClickResume = () => {
+    window.open("https://drive.google.com/file/d/1yqnqgUGO4GqLDRj7IXWc8irpi3Cfazyz/view?usp=sharing", "_blank")
+  }
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -65,8 +69,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:text-black"
-                  href="#"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:text-black cursor-pointer"
+                  onClick={handleClickResume}
                 >
                   Resume
                 </a>

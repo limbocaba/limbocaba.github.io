@@ -151,7 +151,6 @@ export default function Home() {
               <p className="py-2">
                 I believe in staying sharp in skills that most would overlook, such as...
               </p>
-              {/* <h4 className="py-4 text-teal-600">Skills I Use!</h4> */}
               <p className=" text-gray-800 py-1">Git Workflow</p>
               <p className=" text-gray-800 py-1">CLI</p>
               <p className=" text-gray-800 py-1">Google Excel</p>

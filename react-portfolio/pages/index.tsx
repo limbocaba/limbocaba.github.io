@@ -3,6 +3,7 @@ import { BsFillMoonStarsFill, BsFillSunFill, BsFillSunriseFill } from "react-ico
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import metaAvatar from "../public/meta-avatar.png";
+import sandyPic from "../public/me.jpg"
 import design from "../public/design.png";
 import code from "../public/code.png";
 import thumb from "../public/thumb.png";
@@ -69,7 +70,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:text-black cursor-pointer"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 hover:text-black cursor-pointer dark:bg-gradient-to-r dark:from-purple-500 dark:to-red-500 dark:text-black dark:hover:text-white"
                   onClick={handleClickResume}
                 >
                   Resume
@@ -100,7 +101,7 @@ export default function Home() {
             />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={metaAvatar} alt="" layout="fill" objectFit="cover" />
+            <Image src={sandyPic} alt="" layout="fill" objectFit="cover" />
           </div>
         </section>
         <section>
@@ -109,17 +110,13 @@ export default function Home() {
               Services I Offer
             </h3>
             <p className=" text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Deleniti, fugit veniam assumenda voluptatem consequuntur aliquid
-              accusamus quidem asperiores sint quia neque commodi magni id. Eum
-              quae rerum ut harum sunt.
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={code} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
-                Clean Coded Projects
+                Front-End Development
               </h3>
               <p className="py-2">
                 Creating websites,apps and more projects to suit you and your
@@ -127,39 +124,38 @@ export default function Home() {
               </p>
               <h4 className="py-4 text-teal-600">Skills I Use!</h4>
               <p className=" text-gray-800 py-1">React</p>
+              <p className=" text-gray-800 py-1">NextJs</p>
               <p className=" text-gray-800 py-1">Tailwind</p>
-              <p className=" text-gray-800 py-1">Python</p>
-              <p className=" text-gray-800 py-1">Postgresql</p>
+              <p className=" text-gray-800 py-1">Rest APIs</p>
+              <p></p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={design} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
-                Clean Coded Projects
+                Back-End Programs
               </h3>
               <p className="py-2">
-                Creating websites,apps and more projects to suit you and your
-                companys needs!
+                Creating and maintaing back-end services such as databases and servers!
               </p>
               <h4 className="py-4 text-teal-600">Skills I Use!</h4>
-              <p className=" text-gray-800 py-1">React</p>
-              <p className=" text-gray-800 py-1">Tailwind</p>
               <p className=" text-gray-800 py-1">Python</p>
-              <p className=" text-gray-800 py-1">Postgresql</p>
+              <p className=" text-gray-800 py-1">Django</p>
+              <p className=" text-gray-800 py-1">MongoDB</p>
+              <p className=" text-gray-800 py-1">Express</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={thumb} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
-                Clean Coded Projects
+                But Wait, There's More!
               </h3>
               <p className="py-2">
-                Creating websites,apps and more projects to suit you and your
-                companys needs!
+                I believe in staying sharp in skills that most would overlook, such as...
               </p>
-              <h4 className="py-4 text-teal-600">Skills I Use!</h4>
-              <p className=" text-gray-800 py-1">React</p>
-              <p className=" text-gray-800 py-1">Tailwind</p>
-              <p className=" text-gray-800 py-1">Python</p>
-              <p className=" text-gray-800 py-1">Postgresql</p>
+              {/* <h4 className="py-4 text-teal-600">Skills I Use!</h4> */}
+              <p className=" text-gray-800 py-1">Git Workflow</p>
+              <p className=" text-gray-800 py-1">CLI</p>
+              <p className=" text-gray-800 py-1">Google Excel</p>
+              <p className=" text-gray-800 py-1">Communcation Skills</p>
             </div>
           </div>
         </section>

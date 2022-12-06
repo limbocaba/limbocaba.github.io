@@ -146,7 +146,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={thumb} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
-                But Wait, There's More!
+                But Wait, Theres More!
               </h3>
               <p className="py-2">
                 I believe in staying sharp in skills that most would overlook, such as...

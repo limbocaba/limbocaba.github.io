@@ -11,6 +11,7 @@ import hulu from "../public/hulucloneSS.png";
 import petLyfe from "../public/petlyfe.png";
 import pokedex from "../public/pokedex.png";
 import morty from "../public/morty.png";
+import breddit from "../public/breddit.png"
 import { useState } from "react";
 
 export default function Home() {
@@ -45,6 +46,10 @@ export default function Home() {
 
   const handleClickResume = () => {
     window.open("https://drive.google.com/file/d/15Xh0SRlOQDwXKSyLlT6XOIoSlhB7LwrG/view?usp=sharing", "_blank")
+  }
+
+  const handleClickBred = () => {
+    window.open("https://breddit.netlify.app/","_blank")
   }
 
   return (
@@ -197,11 +202,11 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
                <Image
-                src={morty}
+                src={breddit}
                 alt=""
                 layout="responsive"
                 className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
-                onClick={handleClickMorty}
+                onClick={handleClickBred}
               /> 
             </div>
           </div>

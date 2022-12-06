@@ -154,7 +154,7 @@ export default function Home() {
               <p className=" text-gray-800 py-1">Git Workflow</p>
               <p className=" text-gray-800 py-1">CLI</p>
               <p className=" text-gray-800 py-1">Google Excel</p>
-              <p className=" text-gray-800 py-1">Communcation Skills</p>
+              <p className=" text-gray-800 py-1">Communication Skills</p>
             </div>
           </div>
         </section>

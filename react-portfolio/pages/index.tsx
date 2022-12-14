@@ -1,8 +1,7 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill, BsFillSunFill, BsFillSunriseFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
-import metaAvatar from "../public/meta-avatar.png";
 import sandyPic from "../public/me.jpg"
 import design from "../public/design.png";
 import code from "../public/code.png";
@@ -63,7 +62,7 @@ export default function Home() {
       <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className=" font-cursive text-xl dark:text-white">
+            <h1 className=" font-burtons text-xl dark:text-white">
               developedbysc
             </h1>
             <ul className="flex items-center">
@@ -91,8 +90,7 @@ export default function Home() {
               Full Stack Developer
             </h3>
             <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white font-burtons">
-              A hungry and motivated developer looking to expand his skillset
-              and provide value to a team in YOUR company!
+             Eager and hungry developer based in NYC looking to improve my craft and add value to any team.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -111,7 +109,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-teal-600">
+            <h3 className="text-3xl py-1 dark:text-purple-500">
               Services I Offer
             </h3>
             <p className=" text-md py-2 leading-8 text-gray-800 dark:text-white">
@@ -167,7 +165,7 @@ export default function Home() {
         <section>
           <div>
             <div className="flex justify-center">
-              <h3 className="text-3xl py-1 dark:text-teal-600 justify-center underline font-semibold">
+              <h3 className="text-3xl py-1 justify-center underline font-semibold dark:text-purple-400">
                 Projects
               </h3>
             </div>

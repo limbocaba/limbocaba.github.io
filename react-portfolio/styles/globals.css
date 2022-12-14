@@ -23,3 +23,13 @@ a {
   font-family: "burtons" ;
   src: url('../public/Burtons.otf');
 }
+
+@font-face {
+  font-family: Kanit, sans-serif;
+  src: url('https://careerscrossroad.com/@caba2002');
+}
+
+@font-face {
+  font-family: cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kanit:ital,wght@1,200&display=swap');
+}

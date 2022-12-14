@@ -63,7 +63,7 @@ export default function Home() {
       <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className=" font-burtons text-xl dark:text-white">
+            <h1 className=" font-cursive text-xl dark:text-white">
               developedbysc
             </h1>
             <ul className="flex items-center">
@@ -84,13 +84,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-purple-400">
               Sandy J Caba
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
               Full Stack Developer
             </h3>
-            <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
+            <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white font-burtons">
               A hungry and motivated developer looking to expand his skillset
               and provide value to a team in YOUR company!
             </p>

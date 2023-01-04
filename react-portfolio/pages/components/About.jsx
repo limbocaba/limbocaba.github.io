@@ -1,6 +1,4 @@
 import React from "react";
-import coding from "../../public/codingimg.jpg"
-import pokedex from "../../public/pokedex.png"
 
 function About() {
   return (

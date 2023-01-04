@@ -1,8 +1,6 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import Image from "next/image";
-import sandyPic from "../public/me.jpg"
 import design from "../public/design.png";
 import code from "../public/code.png";
 import thumb from "../public/thumb.png";
@@ -13,8 +11,6 @@ import morty from "../public/morty.png";
 import breddit from "../public/breddit.png";
 import sandyai from "../public/SandyAi.jpg";
 import { useState } from "react";
-import Contact from "./components/Contact";
-import Link from "next/link";
 import Navbar from "./components/Navbar.jsx";
 import About from "./components/About.jsx"
 

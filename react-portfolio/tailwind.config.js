@@ -11,7 +11,9 @@ module.exports = {
         burtons: "burtons",
         Kanit: "kanit",
         cursive: "cursive",
-      }
+        lobster: "lobster",
+        passions: "passions"
+      },
     },
   },
   plugins: [],

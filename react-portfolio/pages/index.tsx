@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import Image from "next/image";
 import sandyPic from "../public/me.jpg"
 import design from "../public/design.png";
@@ -10,8 +10,13 @@ import hulu from "../public/hulucloneSS.png";
 import petLyfe from "../public/petlyfe.png";
 import pokedex from "../public/pokedex.png";
 import morty from "../public/morty.png";
-import breddit from "../public/breddit.png"
+import breddit from "../public/breddit.png";
+import sandyai from "../public/SandyAi.jpg";
 import { useState } from "react";
+import Contact from "./components/Contact";
+import Link from "next/link";
+import Navbar from "./components/Navbar.jsx";
+import About from "./components/About.jsx"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -59,11 +64,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className=" bg-white dark:bg-gray-900">
         <section className=" min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className=" font-burtons text-xl dark:text-white">
-              developedbysc
+          <Navbar />
+          
+
+
+
+
+            {/* <h1 className=" font-burtons text-xl dark:text-white">
+              <Link href='/'>
+                About Me
+              </Link>
             </h1>
             <ul className="flex items-center">
               <li>
@@ -80,17 +92,16 @@ export default function Home() {
                   Resume
                 </a>
               </li>
-            </ul>
-          </nav>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-purple-400">
+            </ul> */}
+          <div className="text-center p-[100px]">
+            <h2 className="text-5xl py-2 text-black font-medium md:text-6xl dark:text-purple-400">
               Sandy J Caba
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
               Full Stack Developer
             </h3>
             <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white font-burtons">
-             Eager and hungry developer based in NYC looking to improve my craft and add value to any team.
+             Eager and driven software developer bursting into the tech indutsry ready to learn as much as I can!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -102,9 +113,12 @@ export default function Home() {
               className=" cursor-pointer hover:text-black dark:hover:text-white"
               onClick={handleClickGit}
             />
+            <AiFillMail
+              className=" cursor-pointer hover:text-black dark:hover:text-white"
+            />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={sandyPic} alt="" layout="fill" objectFit="cover" />
+            <Image src={sandyai} alt="" layout="fill" objectFit="cover" />
           </div>
         </section>
         <section>
@@ -116,7 +130,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200">
               <Image src={code} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 Front-End Development
@@ -132,7 +146,7 @@ export default function Home() {
               <p className=" text-gray-800 py-1">Rest APIs</p>
               <p></p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200">
               <Image src={design} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 Back-End Programs
@@ -146,7 +160,7 @@ export default function Home() {
               <p className=" text-gray-800 py-1">MongoDB</p>
               <p className=" text-gray-800 py-1">Express</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200">
               <Image src={thumb} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 But Wait, Theres More!
@@ -163,6 +177,7 @@ export default function Home() {
           </div>
         </section>
         <section>
+          <About />
           <div>
             <div className="flex justify-center">
               <h3 className="text-3xl py-1 justify-center underline font-semibold dark:text-purple-400">
@@ -176,7 +191,6 @@ export default function Home() {
               <Image
                 src={hulu}
                 className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
-                layout="responsive"
                 alt=""
                 onClick={handleClickHulu}
               />
@@ -185,7 +199,6 @@ export default function Home() {
               <Image
                 src={pokedex}
                 className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
-                layout="responsive"
                 alt=""
                 onClick={handleClickPoke}
               />
@@ -194,7 +207,6 @@ export default function Home() {
               <Image
                 src={petLyfe}
                 className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
-                layout="responsive"
                 alt=""
                 onClick={handleClickPet}
               />
@@ -203,7 +215,6 @@ export default function Home() {
                <Image
                 src={breddit}
                 alt=""
-                layout="responsive"
                 className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
                 onClick={handleClickBred}
               /> 
@@ -211,6 +222,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      {/* <About /> */}
     </div>
   );
 }

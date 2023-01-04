@@ -45,7 +45,7 @@ export default function Home() {
   };
 
   const handleClickResume = () => {
-    window.open("https://drive.google.com/file/d/1txcKU_scjTjR9vFCcxa1V0U2bIIzL95o/view?usp=sharing", "_blank")
+    window.open("https://drive.google.com/file/d/1unJpBlTzcZ7ZHZ5x2s1xoWcDM3qY2Yeo/view?usp=sharing", "_blank")
   }
 
   const handleClickBred = () => {

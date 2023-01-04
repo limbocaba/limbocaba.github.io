@@ -11,7 +11,7 @@ function About() {
           <h2 className=" py-4 text-3xl font-bold">Who I Am</h2>
           <p className=" py-2 text-gray-600"></p>
           <p className=" py-2 text-gray-600">
-            I'm a motivated kid born and mostly raised in NYC. Although I was born in the states, my parents came here from the Dominican Republic. I embrace my culture and show appreciation as much as I can, and I hope to do incorporate that into some future projects!
+            I am a motivated developer born and mostly raised in NYC. Although I was born in the states, my parents came here from the Dominican Republic. I embrace my culture and show appreciation as much as I can, and I hope to do incorporate that into some future projects!
           </p>
           <p className="py-2 text-gray-600">
             Before I decided to take a deep dive into the world of tech, I was working at a Chick-Fil-A as well as an Amazon warehouse. Working those jobs made me realize I did not want to work in places like that for the rest of my life. After I combined that realization with my interest in computer science, I decided software engineering was the path for me!

@@ -87,7 +87,7 @@ export default function Navbar() {
             </div>
             <div className=" border-b border-gray-300 my-4">
               <p className=" w-[85%] md:w-[90%] py-4">
-                Let's build something legendary together!
+                Contact me to make amazing projects together!
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function Navbar() {
             </ul>
             <div className=" pt-40">
               <p className=" uppercase tracking-widest text-[#5651e5]">
-                Let's Connect
+                Lets Connect!
               </p>
               <div className=" flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div onClick={handleClickLinked} className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">

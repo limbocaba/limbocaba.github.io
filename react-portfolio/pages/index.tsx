@@ -13,6 +13,7 @@ import sandyai from "../public/SandyAi.jpg";
 import { useState } from "react";
 import Navbar from "./components/Navbar.jsx";
 import About from "./components/About.jsx"
+import Skills from "./components/Skills.jsx"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -120,13 +121,12 @@ export default function Home() {
         <section className=" p-20">
           <div>
             <h3 className="text-3xl py-1 dark:text-purple-500">
-              Services I Offer
             </h3>
             <p className=" text-md py-2 leading-8 text-gray-800 dark:text-white">
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
               <Image src={code} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 Front-End Development
@@ -142,7 +142,7 @@ export default function Home() {
               <p className=" text-gray-800 py-1">Rest APIs</p>
               <p></p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
               <Image src={design} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 Back-End Programs
@@ -156,7 +156,7 @@ export default function Home() {
               <p className=" text-gray-800 py-1">MongoDB</p>
               <p className=" text-gray-800 py-1">Express</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
               <Image src={thumb} alt="" width={100} height={100} />
               <h3 className="text-large font-medium pt-8 pb-2">
                 But Wait, Theres More!
@@ -173,6 +173,7 @@ export default function Home() {
           </div>
         </section>
         <section>
+          <Skills />
           <About />
           <div>
             <div className="flex justify-center">

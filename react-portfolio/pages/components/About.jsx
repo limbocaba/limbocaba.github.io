@@ -1,4 +1,5 @@
 import React from "react";
+import pokedex from "../../public/pokedex.png"
 
 function About() {
   return (

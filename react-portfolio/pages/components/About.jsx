@@ -1,5 +1,5 @@
 import React from "react";
-import codingimg from "../../public/codingimg.jpg"
+import codingimg from "../../public/codingimg.JPG"
 import Image from "next/image";
 
 function About() {

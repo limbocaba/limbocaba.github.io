@@ -53,6 +53,10 @@ export default function Home() {
     window.open("https://breddit.netlify.app/","_blank")
   }
 
+  const handleClickWrong = () => {
+
+  }
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -127,48 +131,41 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
-              <Image src={code} alt="" width={100} height={100} />
+              {/* <Image src={code} alt="" width={100} height={100} /> */}
               <h3 className="text-large font-medium pt-8 pb-2">
-                Front-End Development
+                How old is Sandy?
               </h3>
               <p className="py-2">
-                Creating websites,apps and more projects to suit you and your
-                companys needs!
+                Care for a quick game while you are here?
               </p>
-              <h4 className="py-4 text-teal-600">Skills I Use!</h4>
-              <p className=" text-gray-800 py-1">React</p>
-              <p className=" text-gray-800 py-1">NextJs</p>
-              <p className=" text-gray-800 py-1">Tailwind</p>
-              <p className=" text-gray-800 py-1">Rest APIs</p>
+              <p className="  py-1 hover:text-green-500 cursor-default text-xl">A. 20</p>
+              <p className="  py-1 hover:text-red-600 cursor-default text-xl">B. 24</p>
+              <p className="  py-1 hover:text-red-600 cursor-default text-xl">C. 32</p>
+              <p className=" py-1 hover:text-red-600 cursor-default text-xl">D. 67</p>
               <p></p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
-              <Image src={design} alt="" width={100} height={100} />
+              {/* <Image src={design} alt="" width={100} height={100} /> */}
               <h3 className="text-large font-medium pt-8 pb-2">
-                Back-End Programs
+               Which does Sandy prefer more?
               </h3>
               <p className="py-2">
-                Creating and maintaing back-end services such as databases and servers!
+                Although they are both very useful, I do like one more than the other!
               </p>
-              <h4 className="py-4 text-teal-600">Skills I Use!</h4>
-              <p className=" text-gray-800 py-1">Python</p>
-              <p className=" text-gray-800 py-1">Django</p>
-              <p className=" text-gray-800 py-1">MongoDB</p>
-              <p className=" text-gray-800 py-1">Express</p>
+              <h4 className="py-4 text-teal-600"></h4>
+              <p className=" hover:text-green-400 py-1 cursor-default text-xl">A. Front-End</p>
+              <p className=" hover:text-red-500 py-1 cursor-default text-xl">B. Back-End</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
-              <Image src={thumb} alt="" width={100} height={100} />
+              {/* <Image src={thumb} alt="" width={100} height={100} /> */}
               <h3 className="text-large font-medium pt-8 pb-2">
-                But Wait, Theres More!
+                Should you hire Sandy to your company?
               </h3>
               <p className="py-2">
-                I believe in staying sharp in skills that most would overlook, such as...
+               Theres only one right answer!
               </p>
-              <p className=" text-gray-800 py-1">Git Workflow</p>
-              <p className=" text-gray-800 py-1">CLI</p>
-              <p className=" text-gray-800 py-1">Google Excel</p>
-              <p className=" text-gray-800 py-1">Communication Skills</p>
-	      <p className=" text-gray-800 py-1">ChatGPT</p>
+              <p className=" hover:text-green-400 py-1 cursor-default text-xl">A. Yes</p>
+              <p className=" hover:text-green-400 py-1 cursor-default text-xl font-bold">B. Yes but in bold</p>
             </div>
           </div>
         </section>

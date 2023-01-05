@@ -1,5 +1,6 @@
 import React from "react";
-import pokedex from "../../public/pokedex.png"
+import codingimg from "../../public/codingimg.jpg"
+import Image from "next/image";
 
 function About() {
   return (
@@ -16,9 +17,10 @@ function About() {
             Before I decided to take a deep dive into the world of tech, I was working at a Chick-Fil-A as well as an Amazon warehouse. Working those jobs made me realize I did not want to work in places like that for the rest of my life. After I combined that realization with my interest in computer science, I decided software engineering was the path for me!
           </p>
         </div>
-        {/* <div className=" w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <img className=" rounded-xl" src={pokedex} alt="aboutimg" />
-        </div> */}
+        <div className=" w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 hover:shadow-blue-100">
+        <Image src={codingimg} alt='/' />
+
+        </div>
       </div>
     </div>
   );

@@ -79,7 +79,7 @@ export default function Navbar() {
             <div className=" flex w-full items-center justify-between">
               <Link href='/'>
               {/* Place leftside navbar logo here */}
-              Sandy J Caba
+              <h3 className=" uppercase tracking-widest font-bold">Sandy J Caba</h3>
               </Link>
               <div onClick={handleNav} className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                 <AiOutlineClose />
@@ -105,9 +105,9 @@ export default function Navbar() {
               <Link href="/projects">
                 <li className=" py-4 text-sm hover:bg-gray-100 rounded-lg">Projects</li>
               </Link>
-              <Link href="/contact">
+              {/* <Link href="/contact">
                 <li className=" py-4 text-sm hover:bg-gray-100 rounded-lg">Contact</li>
-              </Link>
+              </Link> */}
             </ul>
             <div className=" pt-40">
               <p className=" uppercase tracking-widest text-[#5651e5]">

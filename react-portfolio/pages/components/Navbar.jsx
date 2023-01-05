@@ -22,6 +22,10 @@ export default function Navbar() {
     window.open("https://drive.google.com/file/d/1unJpBlTzcZ7ZHZ5x2s1xoWcDM3qY2Yeo/view?usp=sharing", "_blank")
   }
 
+  const handleClickEmail = () => {
+    window.open('mailto:cabassndy@gmail.com')
+  }
+
   return (
     <div className=" fixed w-full h-20 shadow-xl z-[100]">
       <div className=" flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-blue-100 text-2xl">
@@ -120,7 +124,7 @@ export default function Navbar() {
                 <div onClick={handleClickGit} className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaGithub />
                 </div>
-                <div className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div onClick={handleClickEmail} className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaEnvelope />
                 </div>
 

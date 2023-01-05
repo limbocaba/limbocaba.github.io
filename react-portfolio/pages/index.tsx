@@ -53,8 +53,8 @@ export default function Home() {
     window.open("https://breddit.netlify.app/","_blank")
   }
 
-  const handleClickWrong = () => {
-
+  const handleClickEmail = () => {
+    window.open('mailto:cabassndy@gmail.com')
   }
 
   return (
@@ -116,6 +116,7 @@ export default function Home() {
             />
             <AiFillMail
               className=" cursor-pointer hover:text-black dark:hover:text-white"
+              onClick={handleClickEmail}
             />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -138,12 +139,21 @@ export default function Home() {
               <p className="py-2">
                 Care for a quick game while you are here?
               </p>
-              <p className="  py-1 hover:text-green-500 cursor-default text-xl">A. 20</p>
-              <p className="  py-1 hover:text-red-600 cursor-default text-xl">B. 24</p>
-              <p className="  py-1 hover:text-red-600 cursor-default text-xl">C. 32</p>
-              <p className=" py-1 hover:text-red-600 cursor-default text-xl">D. 67</p>
-              <p></p>
-            </div>
+              <div>
+              <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-green-400 ease-in duration-300">
+                <p className="  py-1 hover:text-green-500 cursor-default text-xl text-white">A. 20</p>
+              </div>
+              <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-red-600 ease-in duration-300">
+                <p className="  py-1 hover:text-red-600 cursor-default text-xl text-white">B. 24</p>
+              </div>
+              <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-red-600 ease-in duration-300">
+                <p className="  py-1 hover:text-red-600 cursor-default text-xl text-white">C. 32</p>
+              </div>
+              <div className="  m-2 rounded-xl shadow-lg bg-black hover:shadow-red-600 ease-in duration-300">
+                <p className=" py-1 hover:text-red-600 cursor-default text-xl text-white">D. 67</p>
+                </div>
+              </div>
+              </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
               {/* <Image src={design} alt="" width={100} height={100} /> */}
               <h3 className="text-large font-medium pt-8 pb-2">
@@ -153,8 +163,12 @@ export default function Home() {
                 Although they are both very useful, I do like one more than the other!
               </p>
               <h4 className="py-4 text-teal-600"></h4>
-              <p className=" hover:text-green-400 py-1 cursor-default text-xl">A. Front-End</p>
-              <p className=" hover:text-red-500 py-1 cursor-default text-xl">B. Back-End</p>
+              <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-green-400 ease-in duration-300">
+                <p className=" hover:text-green-400 py-1 cursor-default text-xl text-white">A. Front-End</p>
+              </div>
+              <div className=" m-2 rounded-xl shadow-lg bg-black hover:shadow-red-600 ease-in duration-300">
+                <p className=" hover:text-red-500 py-1 cursor-default text-xl text-white">B. Back-End</p>
+                </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
               {/* <Image src={thumb} alt="" width={100} height={100} /> */}
@@ -164,8 +178,12 @@ export default function Home() {
               <p className="py-2">
                Theres only one right answer!
               </p>
-              <p className=" hover:text-green-400 py-1 cursor-default text-xl">A. Yes</p>
-              <p className=" hover:text-green-400 py-1 cursor-default text-xl font-bold">B. Yes but in bold</p>
+              <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-green-400 ease-in duration-300">
+                <p className=" hover:text-green-400 py-1 cursor-default text-xl text-white">A. Yes</p>
+              </div>
+              <div className=" m-2 rounded-xl shadow-lg bg-black hover:shadow-green-400 ease-in duration-300">
+                <p className=" hover:text-green-400 py-1 cursor-default text-xl font-bold text-white">B. Yes but in bold</p>
+                </div>
             </div>
           </div>
         </section>

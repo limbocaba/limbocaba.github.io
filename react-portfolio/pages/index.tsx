@@ -117,7 +117,7 @@ export default function Home() {
             <Image src={sandyai} alt="" layout="fill" objectFit="cover" />
           </div>
         </section>
-        <section>
+        <section className=" p-20">
           <div>
             <h3 className="text-3xl py-1 dark:text-purple-500">
               Services I Offer
@@ -182,7 +182,7 @@ export default function Home() {
             </div>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white"></p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap p-20">
             <div className="basis-1/3 flex-1">
               <Image
                 src={hulu}

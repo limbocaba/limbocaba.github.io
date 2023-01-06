@@ -9,10 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: "burtons",
-        Kanit: "kanit",
         cursive: "cursive",
-        lobster: "lobster",
-        passions: "passions"
+        abril: "abril",
       },
     },
   },

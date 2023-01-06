@@ -24,22 +24,14 @@ a {
   src: url('../public/Burtons.otf');
 }
 
-@font-face {
-  font-family: Kanit, sans-serif;
-  src: url('https://careerscrossroad.com/@caba2002');
-}
 
 @font-face {
-  font-family: cursive;
+  font-family: 'cursive';
   src: url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kanit:ital,wght@1,200&display=swap');
 }
 
 @font-face {
-  font-family: Lobster;
-  src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  font-family: 'abril';
+  src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 }
 
-@font-face {
-  font-family: passions;
-  src: url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
-}

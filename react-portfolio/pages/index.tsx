@@ -102,7 +102,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
               Full Stack Developer
             </h3>
-            <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white font-burtons">
+            <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white font-cursive">
              Dedicated and hard-working developer looking to learn as much as I can!
             </p>
           </div>
@@ -200,18 +200,27 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white"></p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap p-20">
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 w-[494px] h-[295px] m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 hover:shadow-blue-100 flex-col">
               <Image
                 src={hulu}
-                className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
+                height={200}
+                width={350}
+                className="rounded-lg object-cover cursor-default"
                 alt=""
-                onClick={handleClickHulu}
               />
+              <div className=" flex">
+              <h3 className=" rounded-lg shadow-lg bg-black text-white my-4 cursor-pointer py-3 px-3 mx-3 hover:bg-gray-400">Demo</h3>
+                <h3
+                  onClick={handleClickHulu}
+                  className=" rounded-lg shadow-lg bg-black text-white my-4 cursor-pointer py-3 px-3 mx-3 hover:bg-gray-400">
+                  GitHub
+                </h3>
+                </div>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
                 src={pokedex}
-                className="rounded-lg object-cover cursor-pointer transition hover:-translate-y-1 hover:scale-110 hover:brightness-50"
+                className="rounded-lg object-cover cursor-pointer hover:brightness-50"
                 alt=""
                 onClick={handleClickPoke}
               />

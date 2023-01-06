@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, {useState} from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import { BsFillMoonFill, BsMoon } from 'react-icons/bs'
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -40,7 +39,8 @@ export default function Navbar() {
               </li>
             </Link>
             <Link href="/#about">
-              <li className=" ml-10 text-lg uppercase hover:border-b border-black">
+              <li
+                className=" ml-10 text-lg uppercase hover:border-b border-black">
                 About
               </li>
             </Link>

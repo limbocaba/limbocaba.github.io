@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React, {useState} from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { FaAddressCard, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsFillMoonFill, BsMoon } from 'react-icons/bs'
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -30,8 +31,8 @@ export default function Navbar() {
     <div className=" fixed w-full h-20 shadow-xl z-[100]">
       <div className=" flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-blue-100 text-2xl">
         {/* Place leftside logo here */}
-       <h1 className=" cursor-pointer hover:border-b border-gray-400 font-burtons px-7">SJC</h1>
-        <div>
+        <h1 className=" cursor-pointer hover:border-b border-gray-400 font-burtons px-7">SJC</h1>
+        <div className=" px-4">
           <ul className=" hidden md:flex">
             <Link href="/">
               <li className=" ml-10 text-lg uppercase hover:border-b border-black">
@@ -53,7 +54,7 @@ export default function Navbar() {
                 Projects
               </li>
             </Link>
-            <Link href="/#abour">
+            <Link href="/#about">
               <li
                 onClick={handleClickResume}
                 className=" ml-10 text-lg uppercase hover:border-b border-black">

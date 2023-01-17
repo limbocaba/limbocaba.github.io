@@ -38,7 +38,7 @@ export default function Navbar() {
                 Home
               </li>
             </Link>
-            <Link href="/#about">
+            {/* <Link href="/#about">
               <li
                 className=" ml-10 text-lg uppercase hover:border-b border-black">
                 About
@@ -53,7 +53,7 @@ export default function Navbar() {
               <li className=" ml-10 text-lg uppercase hover:border-b border-black">
                 Projects
               </li>
-            </Link>
+            </Link> */}
             <Link href="/#about">
               <li
                 onClick={handleClickResume}
@@ -101,7 +101,11 @@ export default function Navbar() {
               <Link href="/">
                 <li className=" py-4 text-sm hover:bg-gray-100 rounded-lg">Home</li>
               </Link>
-              <Link href="/about">
+              <li
+                onClick={handleClickResume}
+                className=" py-4 text-sm hover:bg-gray-100 rounded-lg">
+                Resume</li>
+              {/* <Link href="/about">
                 <li className=" py-4 text-sm hover:bg-gray-100 rounded-lg">About</li>
               </Link>
               <Link href="/skills">
@@ -109,7 +113,7 @@ export default function Navbar() {
               </Link>
               <Link href="/projects">
                 <li className=" py-4 text-sm hover:bg-gray-100 rounded-lg">Projects</li>
-              </Link>
+              </Link> */}
               {/* <Link href="/contact">
                 <li className=" py-4 text-sm hover:bg-gray-100 rounded-lg">Contact</li>
               </Link> */}

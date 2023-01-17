@@ -70,8 +70,16 @@ function Projects() {
           onClick={handleClickHulu}
           className=" rounded-lg shadow-lg bg-black text-white my-4 cursor-pointer py-3 px-3 mx-3 hover:bg-gray-400 tracking-wider">
           GitHub
-        </h3>
-        </div>
+            </h3>
+          </div>
+          <div>
+            <h3 className=' text-2xl py-2 text-[#5651e5] tracking-wide'>Hulu: Hottest Films Out Now!</h3>
+          </div>
+          <div>
+            <p className=' text-sm tracking-wide'>
+              A mimic of Hulus landing page that uses TMDBs API to constantly update the categories and ratings of all films and TV shows on the site! Created using React, you can navigate the different categories to see what films are new to theaters along with the highest rated films of all time! Scroll through and see if one peaks your interest!
+            </p>
+          </div>
     </div>
     <div className="basis-1/3 flex-1 w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 hover:shadow-blue-100 flex-col">
       <Image
@@ -90,7 +98,13 @@ function Projects() {
           className=" rounded-lg shadow-lg bg-black text-white my-4 cursor-pointer py-3 px-3 mx-3 hover:bg-gray-400 tracking-wider">
           GitHub
         </h3>
-        </div>
+          </div>
+          <div>
+            <h3 className=' text-2xl py-2 text-[#5651e5] tracking-wide'>Pokedex: Gotta Catch Em All! </h3>
+          </div>
+          <div>
+            <p className=' text-sm tracking-wide'>A simple but fun Pokedex site that contains all pokemon and,when clicked on, displays their attack and defense stats along with their pokemon type and an image. Powered by React, you can scroll through the paginated site and see countless pokemon. Can you find your favorite one?</p>
+          </div>
     </div>
     <div className="basis-1/3 flex-1 w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 hover:shadow-blue-100 flex-col">
       <Image
@@ -109,7 +123,13 @@ function Projects() {
           className=" rounded-lg shadow-lg bg-black text-white my-4 cursor-pointer py-3 px-3 mx-3 hover:bg-gray-400 tracking-wider">
           GitHub
         </h3>
-        </div>
+          </div>
+          <div>
+            <h3 className=' text-2xl py-2 text-[#5651e5] tracking-wide'>PetLyfe: Pet E-Commerce Site</h3>
+          </div>
+          <div>
+            <p className=' text-sm tracking-wide'>An e-commerce website created to sell pet clothes and pet toys! Using React on the frontend and MongoDB, Express and RESTful APIs on the backend, this site allows you to add and remove items for your furry friends from your cart and checkout with your order!</p>
+          </div>
     </div>
     <div className="basis-1/3 flex-1 w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 hover:shadow-blue-100 flex-col">
        <Image
@@ -128,7 +148,13 @@ function Projects() {
           className=" rounded-lg shadow-lg bg-black text-white my-4 cursor-pointer py-3 px-3 mx-3 hover:bg-gray-400 tracking-wider">
           GitHub
           </h3>
-        </div>
+          </div>
+          <div>
+            <h3 className=' text-2xl py-2 text-[#5651e5] tracking-wide'>Breddit: The Better Reddit</h3>
+          </div>
+          <div>
+            <p className=' text-sm tracking-wide'>A social media platform inspired by Reddit that allows you to post on your feed to get comments and upvotes from your friends! Created using a React-Boostrap frontend and a Python/Django backend, this app allows you to engage in live chat with other users on the app and post whatever is on your mind!</p>
+          </div>
     </div>
       </div>
       </>

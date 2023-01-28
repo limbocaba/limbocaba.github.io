@@ -1,6 +1,7 @@
 import React from "react";
 import codingimg from "../../public/codingimg.JPG"
 import Image from "next/image";
+import sandy from "../../public/sandy-professional.jpeg"
 
 function About() {
   return (
@@ -19,7 +20,7 @@ function About() {
           <p className=" py-2 text-gray-600 font-abril">When I am not coding or learning new ways to improve upon my work, I am most likely learning new openings in chess or spending time with my family and friends. I enjoy taking trips to see my family in the Dominican Republic and driving four-wheelers! </p>
         </div>
         <div className=" w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 hover:shadow-blue-100">
-        <Image src={codingimg} alt='/' />
+        <Image src={sandy} alt='/' />
 
         </div>
       </div>

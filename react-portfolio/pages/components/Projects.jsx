@@ -135,7 +135,7 @@ function Projects() {
             <p className=" text-sm tracking-wide">
               Stoxy is a finance app that allows you to track up-to-date prices
               on stocks. Using React and Firebase, you can see the share prices
-              of the hottest companies out today and see what the hottet topics
+              of the hottest companies out today and see what the hottest topics
               are that might influence the market in the future. These price
               changes and percentages are all rendered using the Finnhub API.
             </p>

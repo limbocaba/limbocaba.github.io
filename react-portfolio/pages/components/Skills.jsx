@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaPython, FaHtml5, FaJs, FaReact, FaNode } from 'react-icons/fa'
-import { SiPostgresql, SiMongodb, SiTypescript, SiTailwindcss } from 'react-icons/si'
+import { SiPostgresql, SiMongodb, SiTypescript, SiTailwindcss, SiExpress } from 'react-icons/si'
 import { DiDjango } from 'react-icons/di'
 import { BiGitBranch } from 'react-icons/bi'
 
@@ -139,6 +139,18 @@ function Skills() {
               </div>
               <div className=' flex flex-col items-center justify-center'>
                 <h3 className=' tracking-wider font-bold cursor-default'>Git Workflow</h3>
+                </div>
+
+            </div>
+          </div>
+
+          <div className=' p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 hover:shadow-blue-100'>
+            <div className=' grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className=' m-auto'>
+               <SiExpress className=' w-[64px] h-[64px] hover:animate-bounce'/>
+              </div>
+              <div className=' flex flex-col items-center justify-center'>
+                <h3 className=' tracking-wider font-bold cursor-default'>Express.Js</h3>
                 </div>
 
             </div>

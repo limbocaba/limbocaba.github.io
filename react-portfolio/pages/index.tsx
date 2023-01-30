@@ -1,18 +1,14 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 import Image from "next/image";
-import hulu from "../public/hulucloneSS.png";
-import petLyfe from "../public/petlyfe.png";
-import pokedex from "../public/pokedex.png";
-import morty from "../public/morty.png";
-import breddit from "../public/breddit.png";
 import sandyai from "../public/SandyAi.jpg";
 import { useState } from "react";
 import Navbar from "./components/Navbar.jsx";
-import About from "./components/About.jsx"
-import Skills from "./components/Skills.jsx"
-import Projects from "./components/Projects.jsx"
+import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
+import Projects from "./components/Projects.jsx";
 import { BsFillMoonFill, BsFillMoonStarsFill } from "react-icons/bs";
+import Footer from "./components/Footer.jsx";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -45,32 +41,35 @@ export default function Home() {
   };
 
   const handleClickResume = () => {
-    window.open("https://drive.google.com/file/d/1unJpBlTzcZ7ZHZ5x2s1xoWcDM3qY2Yeo/view?usp=sharing", "_blank")
-  }
+    window.open(
+      "https://drive.google.com/file/d/1unJpBlTzcZ7ZHZ5x2s1xoWcDM3qY2Yeo/view?usp=sharing",
+      "_blank"
+    );
+  };
 
   const handleClickBred = () => {
-    window.open("https://github.com/SEI-Buffleheads/reddit-clone","_blank")
-  }
+    window.open("https://github.com/SEI-Buffleheads/reddit-clone", "_blank");
+  };
 
   const handleClickEmail = () => {
-    window.open('mailto:cabassndy@gmail.com')
-  }
+    window.open("mailto:cabassndy@gmail.com");
+  };
 
   const handleClickHuluDemo = () => {
-    window.open("https://sandys-clone.surge.sh/","_blank")
-  }
+    window.open("https://sandys-clone.surge.sh/", "_blank");
+  };
 
   const handleClickPokeDemo = () => {
-    window.open("https://sandys-pokedex.netlify.app/","_blank")
-  }
+    window.open("https://sandys-pokedex.netlify.app/", "_blank");
+  };
 
   const handleClickPetDemo = () => {
-    window.open("https://pet-lyfe.netlify.app/","_blank")
-  }
+    window.open("https://pet-lyfe.netlify.app/", "_blank");
+  };
 
   const handleClickBredDemo = () => {
-    window.open("https://breddit.netlify.app/","_blank")
-  }
+    window.open("https://breddit.netlify.app/", "_blank");
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -83,12 +82,8 @@ export default function Home() {
       <main className=" bg-gray-100 dark:bg-gray-900">
         <section className=" min-h-screen">
           <Navbar />
-          
 
-
-
-
-            {/* <h1 className=" font-burtons text-xl dark:text-white">
+          {/* <h1 className=" font-burtons text-xl dark:text-white">
               <Link href='/'>
                 About Me
               </Link>
@@ -117,7 +112,8 @@ export default function Home() {
               Full Stack Developer
             </h3>
             <p className="text-medium py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white font-cursive">
-             Dedicated and hard-working developer looking to learn as much as I can!
+              Dedicated and hard-working developer looking to learn as much as I
+              can!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -146,8 +142,7 @@ export default function Home() {
             <h3 className="text-2xl py-1 text-[#5651e5] tracking-wider uppercase">
               The Sandy Quiz!
             </h3>
-            <p className=" text-md py-2 leading-8 text-gray-800 dark:text-white">
-            </p>
+            <p className=" text-md py-2 leading-8 text-gray-800 dark:text-white"></p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
@@ -155,58 +150,72 @@ export default function Home() {
               <h3 className="text-large font-medium pt-8 pb-2">
                 How old is Sandy?
               </h3>
-              <p className="py-2">
-                Care for a quick game while you are here?
-              </p>
+              <p className="py-2">Care for a quick game while you are here?</p>
               <div>
-              <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-green-400 ease-in duration-300">
-                <p className="  py-1 hover:text-green-500 cursor-default text-xl text-white">A. 20</p>
-              </div>
-              <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-red-600 ease-in duration-300">
-                <p className="  py-1 hover:text-red-600 cursor-default text-xl text-white">B. 24</p>
-              </div>
-              <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-red-600 ease-in duration-300">
-                <p className="  py-1 hover:text-red-600 cursor-default text-xl text-white">C. 32</p>
-              </div>
-              <div className="  m-2 rounded-xl shadow-lg bg-black hover:shadow-red-600 ease-in duration-300">
-                <p className=" py-1 hover:text-red-600 cursor-default text-xl text-white">D. 67</p>
+                <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-green-400 ease-in duration-300">
+                  <p className="  py-1 hover:text-green-500 cursor-default text-xl text-white">
+                    A. 20
+                  </p>
+                </div>
+                <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-red-600 ease-in duration-300">
+                  <p className="  py-1 hover:text-red-600 cursor-default text-xl text-white">
+                    B. 24
+                  </p>
+                </div>
+                <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-red-600 ease-in duration-300">
+                  <p className="  py-1 hover:text-red-600 cursor-default text-xl text-white">
+                    C. 32
+                  </p>
+                </div>
+                <div className="  m-2 rounded-xl shadow-lg bg-black hover:shadow-red-600 ease-in duration-300">
+                  <p className=" py-1 hover:text-red-600 cursor-default text-xl text-white">
+                    D. 67
+                  </p>
                 </div>
               </div>
-              </div>
+            </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
               {/* <Image src={design} alt="" width={100} height={100} /> */}
               <h3 className="text-large font-medium pt-8 pb-2">
-               Which does Sandy prefer more?
+                Which does Sandy prefer more?
               </h3>
               <p className="py-2">
-                Although they are both very useful, I do like one more than the other!
+                Although they are both very useful, I do like one more than the
+                other!
               </p>
               <h4 className="py-4 text-teal-600"></h4>
               <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-green-400 ease-in duration-300">
-                <p className=" hover:text-green-400 py-1 cursor-default text-xl text-white">A. Front-End</p>
+                <p className=" hover:text-green-400 py-1 cursor-default text-xl text-white">
+                  A. Front-End
+                </p>
               </div>
               <div className=" m-2 rounded-xl shadow-lg bg-black hover:shadow-red-600 ease-in duration-300">
-                <p className=" hover:text-red-500 py-1 cursor-default text-xl text-white">B. Back-End</p>
-                </div>
+                <p className=" hover:text-red-500 py-1 cursor-default text-xl text-white">
+                  B. Back-End
+                </p>
+              </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white hover:scale-105 ease-in duration-200 hover:shadow-blue-100">
               {/* <Image src={thumb} alt="" width={100} height={100} /> */}
               <h3 className="text-large font-medium pt-8 pb-2">
                 Should you hire Sandy to your company?
               </h3>
-              <p className="py-2">
-               Theres only one right answer!
-              </p>
+              <p className="py-2">Theres only one right answer!</p>
               <div className=" m-2 rounded-xl shadow-md bg-black hover:shadow-green-400 ease-in duration-300">
-                <p className=" hover:text-green-400 py-1 cursor-default text-xl text-white">A. Yes</p>
+                <p className=" hover:text-green-400 py-1 cursor-default text-xl text-white">
+                  A. Yes
+                </p>
               </div>
               <div className=" m-2 rounded-xl shadow-lg bg-black hover:shadow-green-400 ease-in duration-300">
-                <p className=" hover:text-green-400 py-1 cursor-default text-xl font-bold text-white">B. Yes but in bold</p>
-                </div>
+                <p className=" hover:text-green-400 py-1 cursor-default text-xl font-bold text-white">
+                  B. Yes but in bold
+                </p>
+              </div>
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

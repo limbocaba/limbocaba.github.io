@@ -43,9 +43,13 @@ function Projects() {
     window.open("https://github.com/SEI-Buffleheads/reddit-clone", "_blank");
   };
 
-  const handleClickStoxy = () => {
+  const handleClickStoxyDemo = () => {
     window.open("https://stoxy.netlify.app", "_blank");
   };
+
+  const handleClickStoxy = () => {
+    window.open("https://github.com/limbocaba/Stoxy-Portfolio-App", "_blank")
+  }
 
   const handleClickMorty = () => {
     window.open("https://mortyrun.netlify.app/", "_blank")
@@ -114,13 +118,13 @@ function Projects() {
           />
           <div className=" flex">
             <h3
-              onClick={handleClickStoxy}
+              onClick={handleClickStoxyDemo}
               className=" rounded-lg shadow-lg bg-black text-white my-4 cursor-pointer py-3 px-3 mx-3 hover:bg-gray-400 tracking-wider"
             >
               Demo
             </h3>
             <h3
-              // onClick={handleClickPoke}
+              onClick={handleClickStoxy}
               className=" rounded-lg shadow-lg bg-black text-white my-4 cursor-pointer py-3 px-3 mx-3 hover:bg-gray-400 tracking-wider"
             >
               GitHub
